@@ -7,7 +7,21 @@
 *
 */
 class default_config{
-	public function default_config(){
+
+public $document_root;
+public $contact_mail;
+public $core_root;
+public $theme;
+public $default_model;
+public $default_controller;
+public $default_action;
+public $custom_model;
+public $db_host;
+public $db_name;
+public $db_user;
+public $db_pass;
+
+	public function __construct(){
 		//	Variables del servidor
 		$this->document_root = $_SERVER['DOCUMENT_ROOT'];
 		$this->contact_mail = $_SERVER["SERVER_ADMIN"];
